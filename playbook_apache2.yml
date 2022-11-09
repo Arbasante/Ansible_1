@@ -3,9 +3,13 @@
 - hosts: all
   remote_user: root
 
-  - tasks:
+  tasks:
 
     - name: "install apache2"
+      apt: 
+        name: apache2
+        state: installed
+
 
       
 
